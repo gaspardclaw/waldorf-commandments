@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The 100 Commandments of Waldorf Parenting</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-snap-type: y mandatory; scroll-behavior: smooth; }
+body { background: #f8f5f0; color: #2a2a2a; font-family: 'Inter', sans-serif; }
+
+.page {
+  min-height: 100vh;
+  scroll-snap-align: start;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* COVER */
+.cover {
+  flex-direction: column;
+  text-align: center;
+  padding: 2rem;
+  background: #f8f5f0;
+}
+.cover h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  font-size: clamp(2rem, 5vw, 4rem);
+  line-height: 1.1;
+  max-width: 700px;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.02em;
+}
+.cover .subtitle {
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  font-size: clamp(1rem, 2vw, 1.4rem);
+  color: #666;
+  margin-bottom: 2rem;
+  font-style: italic;
+}
+.cover .edition {
+  font-family: 'Playfair Display', serif;
+  font-size: 0.9rem;
+  color: #999;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 0.8rem 2rem;
+  margin-top: 1rem;
+}
+.cover .ornament {
+  font-size: 2rem;
+  color: #c9a96e;
+  margin-bottom: 1.5rem;
+}
+
+/* SPREAD */
+.spread {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 100vh;
+  scroll-snap-align: start;
+}
+.spread .image-side {
+  overflow: hidden;
+  background: #eee;
+}
+.spread .image-side img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.spread .text-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  background: #f8f5f0;
+  text-align: center;
+}
+.spread .numeral {
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  font-size: clamp(3rem, 6vw, 5rem);
+  color: #c9a96e;
+  margin-bottom: 1.5rem;
+  line-height: 1;
+}
+.spread .commandment {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  font-size: clamp(1.2rem, 2.2vw, 1.8rem);
+  line-height: 1.5;
+  max-width: 420px;
+  color: #2a2a2a;
+}
+
+/* BACK COVER */
+.back-cover {
+  flex-direction: column;
+  text-align: center;
+  padding: 2rem;
+  background: #f8f5f0;
+}
+.back-cover .closing {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: clamp(1.4rem, 3vw, 2.2rem);
+  max-width: 600px;
+  line-height: 1.4;
+  margin-bottom: 2rem;
+}
+.back-cover .note {
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  font-size: 0.95rem;
+  color: #999;
+  font-style: italic;
+}
+.back-cover .ornament {
+  font-size: 2rem;
+  color: #c9a96e;
+  margin-bottom: 1.5rem;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .spread {
+    grid-template-columns: 1fr;
+    grid-template-rows: 50vh auto;
+  }
+  .spread .text-side {
+    padding: 2rem 1.5rem;
+    min-height: 50vh;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- COVER -->
+<div class="page cover">
+  <div class="ornament">✦</div>
+  <h1>The 100 Commandments of Waldorf Parenting</h1>
+  <div class="subtitle">A survival guide for the organically enlightened</div>
+  <div class="edition">— Preview Edition — 15 of 100 —</div>
+</div>
+
+<!-- COMMANDMENTS -->
+<div class="spread"><div class="image-side"><img src="images/01_screen_time.png" alt=""></div><div class="text-side"><div class="numeral">I.</div><div class="commandment">Thou shalt not speak of screen time. Not even to confess.</div></div></div>
+
+<div class="spread"><div class="image-side"><img src="images/02_wood_toys.png" alt=""></div><div class="text-side"><div class="numeral">II.</div><div class="commandment">If it's not made of wood, it's not a toy. It's a threat.</div></div></div>
+
+<div class="spread"><div class="image-side"><img src="images/03_silk_dream.png" alt=""></div><div class="text-side"><div class="numeral">III.</div><div class="commandment">Your child doesn't need a costume. They need a silk and a dream.</div></div></div>
+
+<div class="spread"><div class="image-side"><img src="images/04_watercolors.png" alt=""></div><div class="text-side"><div class="numeral">IV.</div><div class="commandment">Watercolors only. Markers are violence.</div></div></div>
+
+<div class="spread"><div class="image-side"><img src="images/05_birthday_spiral.png" alt=""></div><div class="text-side"><div class="numeral">V.</div><div class="commandment">The birthday spiral is non-negotiable. You will cry. Every year.</div></div></div>
+
+<div class="spread"><div class="image-side"><img src="images/06_sourdough.png" alt=""></div><div class="text-side"><div class="numeral">VI.</div><div class="commandment">If it's not sourdough, it's not bread. It's a compromise.</div></div></div>
+
+<div class="spread"><div class="image-side"><img src="images/07_sugar.png" alt=""></div><div class="text-side"><div class="numeral">VII.</div><div class="commandment">Sugar doesn't exist. It's an illusion created by mainstream parenting.</div></div></div>
+
+<div class="spread"><div class="image-side"><img src="images/08_beeswax.png" alt=""></div><div class="text-side"><div class="numeral">VIII.</div><div class="commandment">You will own more beeswax than any reasonable person should.</div></div></div>
+
+<div class="spread"><div class="image-side"><img src="images/09_eurythmy.png" alt=""></div><div class="text-side"><div class="numeral">IX.</div><div class="commandment">Eurythmy is not weird. YOU are weird for questioning it.</div></div></div>
+
+<div class="spread"><div class="image-side"><img src="images/10_no_grades.png" alt=""></div><div class="text-side"><div class="numeral">X.</div><div class="commandment">There are no grades. There are "developmental narratives." Your child is thriving. Probably.</div></div></div>
+
+<div class="spread"><div class="image-side"><img src="images/11_lunchbox.png" alt=""></div><div class="text-side"><div class="numeral">XI.</div><div class="commandment">You will judge other parents' lunchboxes. Silently. Ruthlessly.</div></div></div>
+
+<div class="spread"><div class="image-side"><img src="images/12_plastic.png" alt=""></div><div class="text-side"><div class="numeral">XII.</div><div class="commandment">"Oh, we don't really do plastic" — you whisper, hiding the Lego under the bed.</div></div></div>
+
+<div class="spread"><div class="image-side"><img src="images/13_decor.png" alt=""></div><div class="text-side"><div class="numeral">XIII.</div><div class="commandment">Your home décor palette is: oatmeal, honey, and sadness.</div></div></div>
+
+<div class="spread"><div class="image-side"><img src="images/14_michaelmas.png" alt=""></div><div class="text-side"><div class="numeral">XIV.</div><div class="commandment">Festivals you'd never heard of are now the highlight of your year. Michaelmas is coming.</div></div></div>
+
+<div class="spread"><div class="image-side"><img src="images/15_gnomes.png" alt=""></div><div class="text-side"><div class="numeral">XV.</div><div class="commandment">You chose this life. The gnomes chose you.</div></div></div>
+
+<!-- BACK COVER -->
+<div class="page back-cover">
+  <div class="ornament">✦</div>
+  <div class="closing">These were just 15.<br>There are 85 more where that came from.</div>
+  <div class="note">For the organically enlightened everywhere.</div>
+</div>
+
+</body>
+</html>
